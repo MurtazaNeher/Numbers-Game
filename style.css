@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bebas+Neue&family=Bree+Serif&family=Lobster&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --title-font: 'Baloo Bhai 2', cursive;
+    --para-font: 'Bebas Neue', cursive;
+    --para2-font: 'Bree Serif', serif;
+}
+
+body {
+    background-color: azure;
+    font-family: var(--para-font);
+}
+
+#head {
+    text-align: center;
+    padding: 30px;
+}
+
+#head::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background-color: royalblue;
+}
+
+#head h1 {
+    font-size: 60px;
+    font-family: var(--title-font);
+}
+
+#rule-box {
+    display: flex;
+    text-align: center;
+    padding: 25px;
+}
+
+#start-game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+}
+
+#start-game button {
+    width: 150px;
+    height: 90px;
+    margin: 20px auto;
+    font-size: 50px;
+    font-family: var(--para2-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#turn {
+    height: 100px;
+    width: 90vw;
+    border: 2px solid black;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+#number-display {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.numbers {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 10px;
+}
+
+#count-btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#btn-number-inc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 30px auto;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+#btn-number-inc:hover {
+    cursor: pointer;
+}
+
+#btn-number-dec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 30px auto;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+#btn-number-dec:hover {
+    cursor: pointer;
+}
+
+#btn-done {
+    display: block;
+    width: 50%;
+    margin: 30px auto;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 35px;
+}
+
+#btn-done:hover {
+    cursor: pointer;
+}
+
+#btn-restart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 30px auto;
+    height: 60px;
+    border: 2px solid black;
+    background-color: red;
+    border-radius: 10px;
+    font-size: 35px;
+}
+
+#btn-restart:hover {
+    cursor: pointer;
+}
