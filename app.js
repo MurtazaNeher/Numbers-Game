@@ -78,6 +78,7 @@ function incrementList() {
         numberName.style.backgroundColor = "black";
         numberName.style.color = "white";
         numberName.style.border = "2px solid gray";
+        numberName.style.transition = "0.5s";
     }
 }
 
@@ -120,22 +121,37 @@ function decrementList() {
 function calculate() {
 
     if (currentCounter != 0) {
+
         if (counter < 4) {
             counter = 4;
-        } else if (counter < 8) {
+        } else if (counter < 8 && counter > 4) {
             counter = 8
-        } else if (counter < 12) {
+        } else if (counter < 12 && counter > 8) {
             counter = 12
-        } else if (counter < 16) {
+        } else if (counter < 16 && counter > 12) {
             counter = 16;
-        } else if (counter < 20) {
+        } else if (counter < 20 && counter > 16) {
             counter = 20;
-        } else {
+        } else if (counter === 20) {
             counter = 21;
 
             turnContainer.style.display = "flex";
             turnContainer.innerHTML = "You win the game :)";
+        } else {
+            let random = 1 + (11 * Math.random());
 
+            if (random < 4) {
+                counter = counter + 3;
+                incrementList();
+
+            } else if (random < 8) {
+                counter = counter + 2;
+                incrementList();
+
+            } else {
+                counter = counter + 1;
+                incrementList();
+            }
         }
         incrementList();
         currentCounter = 0;
