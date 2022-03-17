@@ -38,22 +38,26 @@ function startComp() {
     turnContainer.style.display = "flex";
     btnRestart.style.display = "flex";
 
-    displayMssg("Your turn now ! ");
+    setTimeout(() => {
+        displayMssg("Your turn now ! ");
 
-    let random = 1 + (11 * Math.random());
+        let random = 1 + (11 * Math.random());
 
-    if (random < 4) {
-        counter = 3;
-        incrementList();
+        if (random < 4) {
+            counter = 3;
+            incrementList();
 
-    } else if (random < 8) {
-        counter = 2;
-        incrementList();
+        } else if (random < 8) {
+            counter = 2;
+            incrementList();
 
-    } else {
-        counter = 1;
-        incrementList();
-    }
+        } else {
+            counter = 1;
+            incrementList();
+        }
+
+    }, 200)
+
 }
 
 
