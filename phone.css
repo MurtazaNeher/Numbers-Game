@@ -25,12 +25,12 @@ body {
 
 #head {
     text-align: center;
-    padding: 10px;
+    padding: 10px 3px;
     background-color: rgb(24, 24, 24);
 }
 
 #head h1 {
-    font-size: 30px;
+    font-size: 26px;
     font-family: var(--title-font);
     color: var(--primary-color);
     /* text-shadow: 5px 5px 5px black, 4px 4px 10px gray; */
@@ -132,13 +132,13 @@ body {
 .numbers {
     border: 1px solid black;
     border-radius: 5px;
-    height: 55px;
-    width: 55px;
+    height: 49px;
+    width: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
-    margin: 10px;
+    font-size: 22px;
+    margin: 8px;
 }
 
 #count-btn-container {
@@ -151,10 +151,10 @@ body {
 
 #btn-number-inc {
     width: 350px;
-    height: 60px;
+    height: 50px;
     /* padding: 10px; */
     padding-top: 0px;
-    margin: 40px 0px;
+    margin: 10px 0px;
     font-size: 25px;
     font-family: var(--para2-font);
     display: flex;
@@ -169,16 +169,16 @@ body {
 #btn-number-inc:hover {
     background-color: black;
     color: white;
-    box-shadow: 8px 8px #333;
+    box-shadow: none;
     transition: 0.5s;
 }
 
 #btn-number-dec {
     width: 350px;
-    height: 60px;
+    height: 50px;
     /* padding: 10px; */
     padding-top: 0px;
-    margin: 40px 0px;
+    margin: 10px 0px;
     font-size: 25px;
     font-family: var(--para2-font);
     display: flex;
@@ -193,7 +193,6 @@ body {
 #btn-number-dec:hover {
     background-color: black;
     color: white;
-    box-shadow: 8px 8px #333;
     transition: 0.5s;
 }
 
@@ -202,10 +201,10 @@ body {
     font-family: var(--para2-font);
     width: 250px;
     margin: 20px auto;
-    height: 60px;
+    height: 50px;
     border: 2px solid black;
     border-radius: 10px;
-    font-size: 35px;
+    font-size: 25px;
     background-color: green;
 }
 
