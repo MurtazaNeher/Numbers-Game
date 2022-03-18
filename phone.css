@@ -30,7 +30,7 @@ body {
 }
 
 #head h1 {
-    font-size: 60px;
+    font-size: 30px;
     font-family: var(--title-font);
     color: var(--primary-color);
     /* text-shadow: 5px 5px 5px black, 4px 4px 10px gray; */
@@ -40,53 +40,57 @@ body {
 }
 
 #home-container {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #rule-box {
     display: flex;
     flex-direction: column;
     font-size: 20px;
-    padding: 35px;
-    width: 500px;
+    padding: 25px;
+    width: 96vw;
     height: auto;
     border: 2px solid var(--primary-color);
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4);
-    margin-top: 50px;
+    margin-top: 20px;
+    margin: 20px auto;
 }
 
 #rule-box h2 {
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 #rule-box ul li {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 #start-game {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 500px;
+    width: 100%;
 }
 
 #start-game h2 {
-    font-size: 35px;
+    font-size: 27px;
 }
 
 #start-game button {
-    width: 250px;
-    height: 90px;
+    width: 200px;
+    height: 70px;
     padding: 10px;
     padding-top: 0px;
     margin: 20px auto;
-    font-size: 50px;
+    font-size: 30px;
     font-family: var(--para2-font);
     display: flex;
     justify-content: center;
@@ -196,7 +200,7 @@ body {
 #btn-done {
     display: block;
     font-family: var(--para2-font);
-    width: 400px;
+    width: 250px;
     margin: 20px auto;
     height: 60px;
     border: 2px solid black;
@@ -238,14 +242,14 @@ footer {
     width: 100%;
     left: 0;
     bottom: 0;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 50px;
 }
 
 #dev {
     text-align: center;
     padding: 10px 10px;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 #dev a {

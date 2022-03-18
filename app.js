@@ -24,7 +24,14 @@ btnRestart.style.display = "none";
 
 function displayMssg(text) {
     turnContainer.innerHTML = text;
+    turnContainer.style.backgroundColor = "transparent";
+    turnContainer.style.color = "black";
 
+}
+
+function displayError() {
+    turnContainer.style.backgroundColor = " #FFD2D2";
+    turnContainer.style.color = "#D8000C";
 }
 
 function startComp() {
@@ -56,7 +63,7 @@ function startComp() {
             incrementList();
         }
 
-    }, 200)
+    }, 700)
 
 }
 
@@ -95,11 +102,14 @@ function incBtnHandler() {
         currentCounter = currentCounter + 1;
     } else {
         displayMssg("Maximum three numbers are allowed at once !");
+        displayError();
     }
 
     if (counter === 21) {
 
         displayMssg("I win the game :)");
+        turnContainer.style.backgroundColor = "#DFF2BF";
+        turnContainer.style.color = "#4F8A10";
         currentCounter = 0;
     }
 }
@@ -118,6 +128,8 @@ function decrementList() {
         currentCounter = currentCounter - 1;
     } else {
         displayMssg("No numbers are available to remove!")
+        displayError();
+
     }
 }
 
@@ -141,6 +153,8 @@ function calculate() {
 
             turnContainer.style.display = "flex";
             turnContainer.innerHTML = "You win the game :)";
+            turnContainer.style.backgroundColor = "#DFF2BF";
+            turnContainer.style.color = "#4F8A10";
         } else {
             let random = 1 + (11 * Math.random());
 
@@ -159,11 +173,14 @@ function calculate() {
         }
         incrementList();
         currentCounter = 0;
+        displayMssg("Your turn now !");
+
     } else {
         displayMssg("Atleast count one number");
+        displayError();
+
     }
 
-    displayMssg("Your turn now !");
 
 }
 
