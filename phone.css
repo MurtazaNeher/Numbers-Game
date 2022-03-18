@@ -193,6 +193,7 @@ body {
 #btn-number-dec:hover {
     background-color: black;
     color: white;
+    box-shadow: none;
     transition: 0.5s;
 }
 
