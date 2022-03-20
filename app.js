@@ -175,6 +175,15 @@ function calculate() {
         currentCounter = 0;
         displayMssg("Your turn now !");
 
+        if (counter === 21) {
+
+            turnContainer.style.display = "flex";
+            turnContainer.innerHTML = "You win the game :)";
+            turnContainer.style.backgroundColor = "#DFF2BF";
+            turnContainer.style.color = "#4F8A10";
+        }
+
+
     } else {
         displayMssg("Atleast count one number");
         displayError();
